@@ -1,8 +1,7 @@
-# React + Vite
+Here we use the mongoose database to store our data of todo-list. In our TodoList we basically storing 3 kinds of data: 1st user data, 2nd main TodoList data, 3rd subTodo-list data.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In User List we storing : userName, Email & Password by useing the mongoose.
 
-Currently, two official plugins are available:
+In todeList we storing : content, complete, createBy(it will take the reference) & subTodo(it will take the reference).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In SubTodoList we storing : content, complete & createdBy (it will take the reference).
